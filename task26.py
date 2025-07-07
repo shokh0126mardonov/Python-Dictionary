@@ -14,16 +14,10 @@ def merge_dicts(a: dict, b: dict) -> dict:
         dict: _description_
         return lug'at
     """
-    group = {}
-    
-    for i in student:
-        for j in teacher:
-            if i == j:
-                if student.values() > teacher.values():
-                    return i
-                else:
-                    return j
-    
+    result = {}
+    result.update(a)
+    result.update(b)
+    return result
 
 
 student = {
